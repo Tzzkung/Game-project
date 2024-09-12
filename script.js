@@ -93,7 +93,7 @@ function update() {
 
         // ตรวจสอบเงื่อนไขการชนของอุปสรรค
         if (onCollision(player, box)) {
-           if(lives <= 1) {
+           if(lives <= 0) {
                 gameOver = true;
                 context.font = "normal bold 40px Arial";
                 context.textAlign = "center";
